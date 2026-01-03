@@ -1,0 +1,26 @@
+THIS is a standard material. Read and keep all these settings as you go.
+This is expecially important for src/dest blend and the emmisive mode
+
+FS10Material {
+	0.3; 0.3; 0.3; 1.0;;
+	0.0; 0.0; 0.0;;
+	0.0;
+	1.000000; 1.000000;    // Detail and bump scales
+	0.190000;     // Scale environment level factor
+	0;    // Use global environment
+	0;     // Do not blend env by inv diffuse alpha
+	0;    // Do not blend env by specular map alpha
+	0; 1; 1;    // Fresnel - diffuse = NO, Specular = YES, Env = YES
+	0; 0; 0.000000;    // Precipitation - Use = NO, Offset = NO
+	64.000000;    // Specular Map Power Scale
+	"One"; "Zero";  // Src/Dest blend
+	EmissiveData {
+		"Additive";	// Emissive Mode
+	}
+	DiffuseTextureFilename {
+		"fuselage_t.bmp";
+	}
+	ReflectionTextureFilename {
+		"envmap.bmp";
+	}
+} // FS10Material
